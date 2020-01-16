@@ -21,6 +21,25 @@ _Example using the starter in production:_ [robertistok.com](https://www.roberti
 
 Your site is now running at `http://localhost:8000`!
 
+## How to personalize?
+
+1. Open `config.ts`
+2. Change the fields (name, description, social) to your data
+3. Edit the **author info** at `src/components/Layout/Author/Author.tsx`
+4. Edit the **about** section at `src/components/About/About.tsx`
+5. Update the `src/hooks/useAvatar.ts` hook with your profile picture
+6. Update the `src/pages/resume` with your resume
+
+## Deploy to Netlify
+
+Follow [this guide](https://www.gatsbyjs.org/docs/deploying-to-netlify/) to deploy to [Netlify](https://netlify.com/)
+
+
+## Building
+
+```shell
+   gatsby build
+```
 
 ---
 
