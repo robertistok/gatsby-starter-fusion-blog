@@ -1,4 +1,4 @@
-[robertistok.com](https://www.robertistok.com)
+_Example using the starter in production:_ [robertistok.com](https://www.robertistok.com)
 
 ---
 
