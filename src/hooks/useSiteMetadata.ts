@@ -12,6 +12,10 @@ const useSiteMetadata = (): SiteSiteMetadata => {
               firstname
               lastname
               name
+              title
+              descriptions {
+                intro
+              }
               assets {
                 icon
                 photo

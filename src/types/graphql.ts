@@ -2173,6 +2173,8 @@ export type SiteFieldsEnum =
   'siteMetadata___author___firstname' |
   'siteMetadata___author___lastname' |
   'siteMetadata___author___name' |
+  'siteMetadata___author___title' |
+  'siteMetadata___author___descriptions___intro' |
   'siteMetadata___author___assets___icon' |
   'siteMetadata___author___assets___photo' |
   'siteMetadata___author___resume' |
@@ -2912,6 +2914,8 @@ export type SiteSiteMetadataAuthor = {
   firstname?: Maybe<Scalars['String']>,
   lastname?: Maybe<Scalars['String']>,
   name?: Maybe<Scalars['String']>,
+  title?: Maybe<Scalars['String']>,
+  descriptions?: Maybe<SiteSiteMetadataAuthorDescriptions>,
   assets?: Maybe<SiteSiteMetadataAuthorAssets>,
   resume?: Maybe<Scalars['String']>,
   username?: Maybe<Scalars['String']>,
@@ -2936,11 +2940,21 @@ export type SiteSiteMetadataAuthorAssetsFilterInput = {
   photo?: Maybe<StringQueryOperatorInput>,
 };
 
+export type SiteSiteMetadataAuthorDescriptions = {
+  intro?: Maybe<Scalars['String']>,
+};
+
+export type SiteSiteMetadataAuthorDescriptionsFilterInput = {
+  intro?: Maybe<StringQueryOperatorInput>,
+};
+
 export type SiteSiteMetadataAuthorFilterInput = {
   birthDate?: Maybe<DateQueryOperatorInput>,
   firstname?: Maybe<StringQueryOperatorInput>,
   lastname?: Maybe<StringQueryOperatorInput>,
   name?: Maybe<StringQueryOperatorInput>,
+  title?: Maybe<StringQueryOperatorInput>,
+  descriptions?: Maybe<SiteSiteMetadataAuthorDescriptionsFilterInput>,
   assets?: Maybe<SiteSiteMetadataAuthorAssetsFilterInput>,
   resume?: Maybe<StringQueryOperatorInput>,
   username?: Maybe<StringQueryOperatorInput>,
@@ -3015,7 +3029,7 @@ export type AvatarQuery = { file: Maybe<{ childImageSharp: Maybe<{ fixed: Maybe<
 export type SiteMetaDataQueryVariables = {};
 
 
-export type SiteMetaDataQuery = { site: Maybe<{ siteMetadata: Maybe<(Pick<SiteSiteMetadata, 'description' | 'siteUrl' | 'title' | 'copyright'> & { author: Maybe<(Pick<SiteSiteMetadataAuthor, 'birthDate' | 'firstname' | 'lastname' | 'name' | 'resume' | 'username'> & { assets: Maybe<Pick<SiteSiteMetadataAuthorAssets, 'icon' | 'photo'>>, social: Maybe<Pick<SiteSiteMetadataAuthorSocial, 'email' | 'medium' | 'twitter' | 'github' | 'goodreads' | 'linkedin' | 'instagram'>> })> })> }> };
+export type SiteMetaDataQuery = { site: Maybe<{ siteMetadata: Maybe<(Pick<SiteSiteMetadata, 'description' | 'siteUrl' | 'title' | 'copyright'> & { author: Maybe<(Pick<SiteSiteMetadataAuthor, 'birthDate' | 'firstname' | 'lastname' | 'name' | 'title' | 'resume' | 'username'> & { descriptions: Maybe<Pick<SiteSiteMetadataAuthorDescriptions, 'intro'>>, assets: Maybe<Pick<SiteSiteMetadataAuthorAssets, 'icon' | 'photo'>>, social: Maybe<Pick<SiteSiteMetadataAuthorSocial, 'email' | 'medium' | 'twitter' | 'github' | 'goodreads' | 'linkedin' | 'instagram'>> })> })> }> };
 
 export type Unnamed_2_QueryVariables = {};
 

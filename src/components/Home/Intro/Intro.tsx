@@ -21,11 +21,8 @@ const Intro: React.FunctionComponent<{}> = (): React.ReactElement => {
         />
         <PitchContainer>
           <Greeting>Hi, I&apos;m {author.firstname} 👋</Greeting>
-          <SubTitle>Javascript Engineer</SubTitle>
-          <Description>
-            I&apos;m a developer and a dreamer, passionate about freeing up
-            energy through code and healthy habits.
-          </Description>
+          <SubTitle>{author.title}</SubTitle>
+          <Description>{author.descriptions.intro}</Description>
         </PitchContainer>
       </HeadingContainer>
       <Social />

@@ -12,6 +12,11 @@ module.exports = {
       firstname: "Róbert",
       lastname: "Istók",
       name: "Róbert Istók",
+      title: "Javascript Engineer",
+      descriptions: {
+        intro:
+          "I am a developer and a dreamer, passionate about freeing up energy through code and healthy habits.",
+      },
       assets: {
         icon: "robertistok_avatar_rounded.png",
         photo: "/robertistok_avatar.jpeg",
