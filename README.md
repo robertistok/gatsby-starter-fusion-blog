@@ -2,14 +2,25 @@
 
 ---
 
-My personal site, where I host my blog, info about myself and places you can reach me.
+## Getting started
 
-### Running locally
+1. Create a Gatsby site
 
-1. `git clone https://github.com/robertistok/personal-website.git`
-2. `yarn`
-3. `yarn develop`
-4. open [localhost:8000](http://localhost:8000)
+ ```shell
+    gatsby new your-name-here https://github.com/gatsbyjs/gatsby-starter-fusion-blog
+ ```
+  
+2. Start developing
+
+```shell
+    cd your-name-here
+    gatsby develop
+ ```
+
+3. Open and edit the source code
+
+Your site is now running at `http://localhost:8000`!
+
 
 ---
 
