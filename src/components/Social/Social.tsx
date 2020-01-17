@@ -26,7 +26,7 @@ const Social: React.FunctionComponent<SocialProps> = ({
       >
         <SocialLink type="linkedin" userId={social.linkedin} />
         <SocialLink type="github" userId={social.github} />
-        <SocialLink type="medium" userId={social.medium} />
+        <SocialLink type="medium" userId={`@${social.medium}`} />
         <SocialLink type="twitter" userId={social.twitter} />
         <SocialLink type="goodreads" userId={social.goodreads} />
         <SocialLink
